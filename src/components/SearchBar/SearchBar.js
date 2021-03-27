@@ -19,7 +19,7 @@ export default class SearchBar extends Component {
           <input 
             className='rounded w-full p-2' 
             type='text' 
-            placeholder='cat'
+            placeholder='Paris'
             value={this.state.term}
             onChange={(e) => this.setState({term: e.target.value})}
           />
