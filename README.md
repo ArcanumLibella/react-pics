@@ -1,4 +1,5 @@
-# 📸 THE PIX FINDER, a little app created with React to get images from Unsplash
+# 📸 THE PIX FINDER
+## A little app created with React to get images from Unsplash
 👀 : https://arcanumlibella.github.io/react-pics
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
