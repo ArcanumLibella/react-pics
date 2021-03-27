@@ -37,7 +37,7 @@ class App extends React.Component {
         <Header />
         <SearchBar onSubmit={this.handleSubmit} />
         <h2 className="my-8 font-bold">I found { this.state.images.length } image(s).</h2>
-        <div className="container-lg mx-auto max-w-screen-lg">
+        <div className="container-lg mx-auto max-w-screen-md">
           <ImageList images={ this.state.images }/>
         </div>
       </div>
