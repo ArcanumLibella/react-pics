@@ -10,7 +10,7 @@ export default class SearchBar extends Component {
 
   render() {
     return (
-      <div className='searchBar bg-yellow-300 p-8 rounded-b-3xl fixed w-full'>
+      <div className='searchBar bg-yellow-300 p-8 rounded-b-3xl w-full'>
         <form 
           className='max-w-screen-md flex flex-col items-start mx-auto'
           onSubmit={this.onFormSubmit}

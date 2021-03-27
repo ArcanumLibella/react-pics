@@ -5,8 +5,10 @@ import Header from './components/Header/Header'
 import SearchBar from './components/SearchBar/SearchBar'
 
 class App extends React.Component {
+  state = { images: [] }
+
   // WITH ASYNC AWAIT
-  async handleSubmit (term) {
+  handleSubmit = async (term) => {
     const response = await axios
       .get('https://api.unsplash.com/search/photos', {
         params: { query: term },
@@ -15,7 +17,8 @@ class App extends React.Component {
         }
       })
 
-    console.log(response.data.results)
+      this.setState({ images: response.data.results })
+    // console.log(this.state.images)
   }
 
   // WITH .then
@@ -36,6 +39,7 @@ class App extends React.Component {
       <div className='App'>
         <Header />
         <SearchBar onSubmit={this.handleSubmit} />
+        <h2 className="mt-4 font-bold">I found { this.state.images.length } image(s).</h2>
       </div>
     )
   }
